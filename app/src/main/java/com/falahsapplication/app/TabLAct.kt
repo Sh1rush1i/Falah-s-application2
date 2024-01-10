@@ -33,7 +33,7 @@ class TabLAct : AppCompatActivity() {
 
         val tabLayout = findViewById<com.google.android.material.tabs.TabLayout>(R.id.tablayout)
 
-        val tabTitles = arrayOf("Ruby", "Python")
+        val tabTitles = arrayOf("Food", "Drink")
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabTitles[position]

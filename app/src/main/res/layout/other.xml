@@ -34,8 +34,6 @@
     </RelativeLayout>
 
 
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,7 +87,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="High Quality Book Publisher"
+                        android:text="Quality over quantity"
                         android:layout_gravity="center"
                         android:textSize="14sp" />
                 </LinearLayout>
