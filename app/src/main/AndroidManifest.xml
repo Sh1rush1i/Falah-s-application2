@@ -57,5 +57,7 @@
             android:name="com.falahsapplication.app.modules.outsidesix.ui.OutsidesixActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.falahsapplication.app.modules.createaccount.ui.CreateAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".OtherAct"/>
+        <activity android:name=".TabLAct"/>
     </application>
 </manifest>

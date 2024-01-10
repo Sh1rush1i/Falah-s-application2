@@ -4,11 +4,16 @@
     <data>
         <variable name="keranjangVM" type="com.falahsapplication.app.modules.keranjang.data.viewmodel.KeranjangVM"/>
     </data>
-    <LinearLayout android:gravity="center_horizontal"
-        android:id="@+id/linearKERANJANG"
+    <ScrollView
+        android:gravity="center_horizontal"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/linearKERANJANG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
         <androidx.appcompat.widget.AppCompatButton
             android:ellipsize="end" android:gravity="center"
             android:id="@+id/btnPayment"
@@ -142,5 +147,6 @@
             android:singleLine="true"
             android:text="@{keranjangVM.keranjangModel.txtBacktomenu}"
             style="@style/txtLexendregular15" tools:text="Back To Menu"/>
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </layout>

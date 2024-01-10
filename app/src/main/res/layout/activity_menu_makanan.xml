@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable name="menuMakananVM" type="com.falahsapplication.app.modules.menumakanan.data.viewmodel.MenuMakananVM"/>
     </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout android:gravity="center_horizontal"
         android:id="@+id/linearColumnarrowleft"
         android:layout_height="match_parent"
@@ -178,11 +183,26 @@
                             tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle28_118x121"/>
                     </LinearLayout>
                 </HorizontalScrollView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="24dp"
+                    android:elevation="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/test"
+                    android:text="More Information"
+                    android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
             <LinearLayout android:gravity="end"
                 android:id="@+id/linearRowlanguage"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_162pxv"
+                android:layout_marginTop="24dp"
                 android:layout_width="match_parent"
                 android:orientation="horizontal" style="@style/groupStylebluegray_100">
                 <TextView android:ellipsize="end"
@@ -222,4 +242,5 @@
                 android:layout_marginTop="@dimen/_30pxv" android:layout_width="@dimen/_8pxh"/>
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </layout>

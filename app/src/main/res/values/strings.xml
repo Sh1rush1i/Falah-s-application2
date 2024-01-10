@@ -108,4 +108,15 @@ Rp 40</string>
 <string name="lbl_account">Account</string>
 <string name="msg_please_enter_valid_pa">Please enter valid password</string>
 <string name="msg_please_enter_valid_email">Please enter valid email</string>
+    <string name="fud">
+Welcome to our app, the modern culinary solution to meet your food needs quickly, conveniently, and deliciously! With our food service, we bring an unforgettable dining experience to your fingertips.\n
+    \n1. Diverse Menu Selection:\n
+    Explore a wide range of food options from top restaurants and your favorite local kitchens. From local dishes to international cuisines, we have everything to satisfy your palate.\n
+    \n2. Fast and Secure Delivery:\n
+    Enjoy the ease of ordering and direct delivery to your door. With our extensive delivery network, you can indulge in your favorite dishes without leaving the comfort of your home.</string>
+    <string name="drinks">Quench your thirst with our exceptional beverage service, where refreshing choices and delightful sips await you. Dive into a world of liquid luxury, where convenience meets quality, offering a tantalizing array of drinks to elevate your beverage experience.\n
+    \n1. Diverse Drink Selection:\n
+    Immerse yourself in a diverse range of beverages, from energizing coffee blends to exotic teas, vibrant smoothies, and decadent shakes. Our menu is curated to satisfy every palate and occasion.\n
+    \n2. Swift and Reliable Delivery:\n
+    Enjoy the ease of swift and reliable beverage deliveries right to your doorstep. Our efficient delivery network ensures that your favorite drinks are just a tap away, providing ultimate convenience.</string>
 </resources>

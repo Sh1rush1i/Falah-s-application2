@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
+import com.falahsapplication.app.OtherAct
 import com.falahsapplication.app.R
 import com.falahsapplication.app.appcomponents.base.BaseActivity
 import com.falahsapplication.app.databinding.ActivityMenuMakananBinding
@@ -73,6 +74,11 @@ class MenuMakananActivity : BaseActivity<ActivityMenuMakananBinding>(R.layout.ac
       val destIntent = MenuUtamaActivity.getIntent(this, null)
       startActivity(destIntent)
     }
+    binding.test.setOnClickListener {
+      val destIntent = OtherAct.getIntent(this, null)
+      startActivity(destIntent)
+    }
+
   }
 
   companion object {
