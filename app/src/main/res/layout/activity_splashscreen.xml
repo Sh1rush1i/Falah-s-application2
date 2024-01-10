@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashscreenVM" type="com.falahsapplication.app.modules.splashscreen.data.viewmodel.SplashscreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSplashscreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageRectangleOne"
+            android:layout_gravity="center"
+            android:layout_height="435dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="41dp"
+            android:layout_width="330dp"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle1"/>
+    </FrameLayout>
+</layout>

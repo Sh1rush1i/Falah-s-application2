@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="kwitansiVM" type="com.falahsapplication.app.modules.kwitansi.data.viewmodel.KwitansiVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearKwitansi"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageRectangleFortyThree"
+            android:layout_height="520dp"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle43}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle43"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBackMenu"
+            style="@style/btnSolidRounded_6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_157pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginBottom="@dimen/_30pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_16pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_back_menu"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15sp"
+            tools:text="@string/lbl_back_menu" />
+    </LinearLayout>
+</layout>

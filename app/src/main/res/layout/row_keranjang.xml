@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="keranjangRowModel" type="com.falahsapplication.app.modules.keranjang.data.model.KeranjangRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowhamburgerge41c"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:id="@+id/imageHamburgerge41c"
+            android:layout_height="@dimen/_64pxh"
+            android:layout_marginBottom="@dimen/_21pxv"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="@dimen/_114pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+            imageRes="@{@drawable/img_rectangle40}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle40"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnsalmonchilli"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_41pxv"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_weight="0.56" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSalmonChilli"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{keranjangRowModel.txtSalmonChilli}"
+                style="@style/txtLexendregular14" tools:text="@string/lbl_salmon_chilli"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowlanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.79"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{keranjangRowModel.txtLanguage}"
+                    style="@style/txtLexendextrabold15" tools:text="@string/lbl_rp_100_000"/>
+                <ImageView android:id="@+id/imageImageThirtyOne"
+                    android:layout_height="@dimen/_18pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_42pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_18pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image31"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image31"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_weight="0.06"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{keranjangRowModel.txtOne}"
+                    style="@style/txtLexendregular15" tools:text="@string/lbl_1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imagePlus"
+            android:layout_height="@dimen/_16pxh"
+            android:layout_marginBottom="@dimen/_45pxv"
+            android:layout_marginEnd="@dimen/_6pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_46pxv"
+            android:layout_width="@dimen/_15pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_plus"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_plus"/>
+    </LinearLayout>
+</layout>

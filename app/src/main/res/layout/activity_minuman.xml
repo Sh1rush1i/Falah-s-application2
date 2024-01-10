@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="minumanVM" type="com.falahsapplication.app.modules.minuman.data.viewmodel.MinumanVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameMINUMAN"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_400">
+        <LinearLayout android:id="@+id/linearColumnellipseone"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="9dp"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackellipseone"
+                android:layout_height="320dp" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageEllipseOne"
+                    android:layout_gravity="start"
+                    android:layout_height="400dp"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse1_1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_1"/>
+                <FrameLayout android:id="@+id/frameStackrectangleone"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_320pxv"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_349pxh">
+                    <ImageView android:id="@+id/imageRectangleOne"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="@dimen/_99pxh"
+                        android:layout_marginEnd="@dimen/_138pxh"
+                        android:layout_marginStart="@dimen/_138pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_72pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_rectangle1}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle1"/>
+                    <ImageView
+                        android:id="@+id/imageRectangleTwentyFour"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_248pxv"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_rectangle24}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle24"/>
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_18pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_6pxh"
+                        android:layout_width="@dimen/_29pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                </FrameLayout>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerMinuman"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_48pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_40pxh}" tools:itemCount="3" tools:listitem="@layout/row_minuman"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

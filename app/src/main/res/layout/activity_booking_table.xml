@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bookingTableVM" type="com.falahsapplication.app.modules.bookingtable.data.viewmodel.BookingTableVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearBOOKINGTABLE"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_height="20dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="32dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+
+        <TextView
+            android:id="@+id/txtCHOOSEYOURRoo"
+            style="@style/txtOpenSansromanextrabold36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:gravity="center_horizontal"
+            android:text="@{bookingTableVM.bookingTableModel.txtCHOOSEYOURRoo}"
+            android:textColor="@color/black"
+            tools:text="@string/msg_choose_your_ro" />
+
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_23pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_74pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_101cornerRadius">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnoutsideroom"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtOutsideRoom"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{bookingTableVM.bookingTableModel.txtOutsideRoom}"
+                    style="@style/txtLexendextrabold24"
+                    textUnderline="true" tools:text="@string/lbl_outside_room"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnindoorroom"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtIndoorRoom"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{bookingTableVM.bookingTableModel.txtIndoorRoom}"
+                    style="@style/txtLexendextrabold24"
+                    textUnderline="true" tools:text="@string/lbl_indoor_room"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnrooftopcafe"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtRooftopCafe"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{bookingTableVM.bookingTableModel.txtRooftopCafe}"
+                    style="@style/txtLexendextrabold24"
+                    textUnderline="true" tools:text="@string/lbl_rooftop_cafe2"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumntheskybar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtTheskyBar"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{bookingTableVM.bookingTableModel.txtTheskyBar}"
+                    style="@style/txtLexendextrabold24"
+                    textUnderline="true" tools:text="@string/lbl_the_sky_bar"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnromandinner"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtRomanDinner"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{bookingTableVM.bookingTableModel.txtRomanDinner}"
+                    style="@style/txtLexendextrabold24"
+                    textUnderline="true" tools:text="@string/lbl_roman_dinner2"/>
+            </LinearLayout>
+
+
+            <TextView android:ellipsize="end"
+                android:gravity="start"
+                android:id="@+id/txtLanguage"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_24pxv"
+                android:paddingStart="@dimen/_19pxh"
+                android:paddingTop="@dimen/_22pxv"
+                android:singleLine="true"
+                android:text="@{bookingTableVM.bookingTableModel.txtLanguage}"
+                style="@style/txtSolidRounded" textUnderline="true" tools:text="italy call"/>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gazza" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

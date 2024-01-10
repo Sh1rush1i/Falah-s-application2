@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.falahsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.falahsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.falahsapplication.app.modules.minuman.ui.MinumanActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.falahsapplication.app.modules.splashscreen.ui.SplashscreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.falahsapplication.app.modules.qris.ui.QrisActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.outsidefive.ui.OutsidefiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.dessert.ui.DessertActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.outsideone.ui.OutsideoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.makanan.ui.MakananActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.bookingtable.ui.BookingTableActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.hotover.ui.HotOverActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.menuutama.ui.MenuUtamaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.transferbank.ui.TransferBankActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.outsidethree.ui.OutsidethreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.keranjang.ui.KeranjangActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.outsidetwo.ui.OutsidetwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.menumakanan.ui.MenuMakananActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.outsidefour.ui.OutsidefourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.option.ui.OptionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.pembayaran.ui.PembayaranActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.kwitansi.ui.KwitansiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.outsidesix.ui.OutsidesixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.falahsapplication.app.modules.createaccount.ui.CreateAccountActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

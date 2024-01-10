@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="qrisVM" type="com.falahsapplication.app.modules.qris.data.viewmodel.QrisVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameQRIS"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnname"
+            android:layout_gravity="top|center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtQris"
+                style="@style/txtOpenSansromanbold20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{qrisVM.qrisModel.txtQris}"
+                tools:text="@string/lbl_qris" />
+
+            <FrameLayout android:id="@+id/frameStackqris"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_344pxv" android:layout_width="@dimen/_301pxh">
+                <LinearLayout android:id="@+id/linearColumnqris"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+
+                </LinearLayout>
+                <ImageView android:id="@+id/imageImageFortyTwo"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_301pxv"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image42}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image42"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowname"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtName"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="0.38"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{qrisVM.qrisModel.txtName}"
+                    style="@style/txtOpenSansromanbold15" tools:text="@string/lbl_name"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGazzabarkery"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_127pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.62"
+                    android:textSize="13sp"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{qrisVM.qrisModel.txtGazzabarkery}"
+                    style="@style/txtOpenSansromanbold12" tools:text="@string/lbl_gazza_barkery"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnGoToKwitasni"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_249pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_9pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_9pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_go_to_kwitasni"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_go_to_kwitasni"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

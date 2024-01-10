@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="transferBankVM" type="com.falahsapplication.app.modules.transferbank.data.viewmodel.TransferBankVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameTRANSFERBANK"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+        <LinearLayout
+            android:id="@+id/linearColumntransferbank"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTransferBank"
+                style="@style/txtOpenSansromanbold20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:singleLine="true"
+                android:text="@{transferBankVM.transferBankModel.txtTransferBank}"
+                tools:text="@string/lbl_transfer_bank" />
+
+            <TextView
+                android:id="@+id/txtLanguage"
+                style="@style/txtOpenSansromanbold15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_140pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{transferBankVM.transferBankModel.txtLanguage}"
+                tools:text="@string/lbl_nama2" />
+
+            <TextView
+                android:id="@+id/txtLanguageOne"
+                style="@style/txtOpenSansromanbold15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{transferBankVM.transferBankModel.txtLanguageOne}"
+                tools:text="@string/lbl_kode" />
+
+            <View
+                android:id="@+id/viewRectangleSeventeen"
+                android:layout_width="@dimen/_8pxh"
+                android:layout_height="@dimen/_3pxv"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_51pxh"
+                android:layout_marginTop="@dimen/_493pxv"
+                android:layout_marginEnd="@dimen/_51pxh"
+                android:background="@drawable/rectangle_bg_bluegray_100_radius_1_5" />
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGoldenStickBi"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_220pxv"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_220pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{transferBankVM.transferBankModel.txtGoldenStickBi}"
+            style="@style/txtOpenSansromanbold12" tools:text="@string/msg_golden_stick_bi"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtPassword"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_284pxv"
+            android:layout_marginEnd="@dimen/_94pxh"
+            android:layout_marginStart="@dimen/_94pxh"
+            android:layout_marginTop="@dimen/_284pxv"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_15sp"
+            android:singleLine="true"
+            android:text="@{transferBankVM.transferBankModel.txtPassword}"
+            style="@style/txtOpenSansromanbold12" tools:text="@string/lbl_7854"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnGoToKwitasni"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_81pxv"
+            android:layout_marginEnd="@dimen/_53pxh"
+            android:layout_marginStart="@dimen/_53pxh"
+            android:layout_marginTop="@dimen/_81pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_9pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_go_to_kwitasni"
+            android:textAllCaps="false" style="@style/btnSolidRounded_4" tools:text="@string/lbl_go_to_kwitasni"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btn74059460568"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_107pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_107pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_23pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_23pxv" android:singleLine="true"
+            android:text="@string/lbl_740_5946_0568"
+            android:textAllCaps="false" style="@style/btnSolidRounded_5" tools:text="@string/lbl_740_5946_0568"/>
+    </FrameLayout>
+</layout>

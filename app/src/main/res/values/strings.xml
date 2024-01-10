@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">falah_s_application2</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_note">Note</string>
+<string name="lbl_rp_100_000">Rp 100.000 </string>
+<string name="msg_sky_bar_adalah">Sky bar adalah tempat bartender yang menyajikan minuman segar untuk di nikmati bersama teman, pacar maupun keluarga</string>
+<string name="lbl_back">Back </string>
+<string name="msg_don_t_have_an_a">Don\u2019t have an account? Sign up</string>
+<string name="lbl_english">English</string>
+<string name="lbl_book_now">Book Now</string>
+<string name="msg_confirm_passwor">Confirm Password</string>
+<string name="lbl_chesee_cake">Chesee Cake</string>
+<string name="lbl_transfer_bank">Transfer Bank</string>
+<string name="lbl_sky_bar">Sky Bar</string>
+<string name="lbl_age">Age</string>
+<string name="lbl_indoor_room">Indoor Room</string>
+<string name="lbl_food">Food</string>
+<string name="msg_create_your_acc">Create your Account</string>
+<string name="lbl_menu">MENU</string>
+<string name="lbl_rp_20_000">Rp 20.000 </string>
+<string name="lbl_the_sky_bar">The sky Bar</string>
+<string name="lbl_kode">Kode : </string>
+<string name="lbl_hot_over2">HOT OVER</string>
+<string name="lbl_indonesia">Indonesia</string>
+<string name="lbl_snacks">snacks</string>
+<string name="lbl_scan_here">Scan Here</string>
+<string name="lbl_margarita">Margarita</string>
+<string name="msg_tuna_meryland_a">Tuna Meryland adalah ikan yang di baluri dengan rempah khusus yang berasa asin gurih, pedas dan sedikit asam
+Rp 90</string>
+<string name="lbl_total">Total :</string>
+<string name="lbl_log_out">Log out</string>
+<string name="lbl_sign_in">Sign in</string>
+<string name="lbl_italy_call">Italy call</string>
+<string name="msg_rooftop_cafe_me">Rooftop cafe merupakan tempat anak muda untuk bergaul satu sama lain dengan nuansa elegan yang difasilitaskan</string>
+<string name="lbl_go_to_kwitasni">Go to Kwitasni</string>
+<string name="lbl_qris">Qris</string>
+<string name="msg_outside_room_ad">Outside room adalah resto bagian luar kami yang menyajikan pemandangan yang indah dengan nuansa city light dan di padunya dengan makanan khas italy</string>
+<string name="lbl_back_to_menu">Back to menu</string>
+<string name="lbl_sign_up">Sign up</string>
+<string name="lbl_nama">Nama</string>
+<string name="msg_golden_stick_bi">Golden Stick Billiard</string>
+<string name="lbl_keranjang">KERANJANG</string>
+<string name="lbl_740_5946_0568">740 5946 0568</string>
+<string name="lbl_name">Name :</string>
+<string name="lbl_gazza_barkery">Gazza barkery</string>
+<string name="lbl_roman_dinner2">Roman
+Dinner</string>
+<string name="msg_chiken_marylan">Chiken marylan adalah ayam yang di baluri dengan rempah khusus yang berasa asin gurih, pedas dan sedikit asam
+Rp 120</string>
+<string name="lbl_profile">Profile</string>
+<string name="msg_choose_your_ro">CHOOSE YOUR 
+Room</string>
+<string name="lbl_rp_120_000">Rp 120.000 </string>
+<string name="msg_pancake_adalah">pancake adalah makanan penutup lezat
+Rp 38</string>
+<string name="lbl_pan_cake">Pan Cake</string>
+<string name="msg_login_to_your_a">Login to your Account</string>
+<string name="lbl_outside_room">Outside Room</string>
+<string name="lbl_email">Email</string>
+<string name="lbl_your_groceries">Your groceries</string>
+<string name="msg_salmon_chilli_a">Salmon Chilli adalah salmon yang di baluri dengan rempah khusus dan cabe hijau yang berasa asin gurih, pedas 
+Rp 100</string>
+<string name="lbl_1">1</string>
+<string name="lbl_nama2">Nama : </string>
+<string name="lbl_drink">Drink</string>
+<string name="lbl_cash">Cash</string>
+<string name="lbl_history">History</string>
+<string name="msg_or_signs_in_wit">Or signs in with</string>
+<string name="msg_don_t_have_an_a2">Don\u2019t have an account? </string>
+<string name="lbl_chiken_meryland">Chiken Meryland</string>
+<string name="msg_forget_your_pas">Forget your password? </string>
+<string name="msg_minuman_cocktai">Minuman cocktails yang lezat
+Rp 20</string>
+<string name="lbl_italy_call2">Italy call </string>
+<string name="msg_dipadunya_keju">dipadunya keju pilihan yang di fermentasi dengan takaran yang pas sehingga membuat adonan yang lezat dalam setiap gigitan
+Rp 39</string>
+<string name="lbl_room_list">ROOM LIST</string>
+<string name="lbl_champagne">Champagne</string>
+<string name="msg_or_signs_up_wit">Or signs up with</string>
+<string name="lbl_payment">Payment</string>
+<string name="lbl_roman_dinner">Roman dinner</string>
+<string name="lbl_hot_over">HOT 
+OVER</string>
+<string name="lbl_lime">Lime</string>
+<string name="lbl_pay">Pay</string>
+<string name="lbl_back_to_payment">Back to Payment</string>
+<string name="lbl_7854">7854*****</string>
+<string name="msg_indoor_room_ada">Indoor room adalah resto yang menyajikan kenyamanan yang hangat bersama keluarga, teman, bahkan dengan pasangan sendiri</string>
+<string name="lbl_rooftop_cafe2">Rooftop
+Cafe</string>
+<string name="lbl_tuna_meryland">Tuna Meryland</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_salmon_chilli">Salmon Chilli</string>
+<string name="msg_minuman_khas_er">Minuman khas eropa dan amerika
+Rp 30</string>
+<string name="lbl_tar_cake">Tar Cake</string>
+<string name="msg_pencuci_mulut_i">Pencuci mulut italy
+Rp 50</string>
+<string name="lbl_language">Language</string>
+<string name="lbl_back_menu">Back menu</string>
+<string name="lbl_rooftop_cafe">Rooftop Cafe</string>
+<string name="lbl_birthday">Birthday</string>
+<string name="msg_minuman_segar_d">Minuman segar dengan dipadunya soda dan jeruk segar pilihan
+Rp 40</string>
+<string name="lbl_type">type..</string>
+<string name="lbl_account">Account</string>
+<string name="msg_please_enter_valid_pa">Please enter valid password</string>
+<string name="msg_please_enter_valid_email">Please enter valid email</string>
+</resources>

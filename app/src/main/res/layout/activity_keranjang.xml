@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="keranjangVM" type="com.falahsapplication.app.modules.keranjang.data.viewmodel.KeranjangVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearKERANJANG"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnPayment"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@string/lbl_payment"
+            android:textAllCaps="false" style="@style/btnSolidRounded_2" tools:text="@string/lbl_payment"/>
+        <FrameLayout android:id="@+id/frameStackrectanglethirtyone"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_493pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_37pxv" android:layout_width="@dimen/_342pxh">
+            <ImageView android:id="@+id/imageRectangleThirtyOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_493pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+                imageRes="@{@drawable/img_rectangle31_493x342}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle31_493x342"/>
+            <LinearLayout android:id="@+id/linearColumnyourgroceries"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYourgroceries"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{keranjangVM.keranjangModel.txtYourgroceries}"
+                    style="@style/txtLexendregular20" tools:text="@string/lbl_your_groceries"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerKeranjang"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_9pxh}" tools:itemCount="2" tools:listitem="@layout/row_keranjang"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNote"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{keranjangVM.keranjangModel.txtNote}"
+                    style="@style/txtLexendregular15" tools:text="@string/lbl_note"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumntype"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtType"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_131pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{keranjangVM.keranjangModel.txtType}"
+                        style="@style/txtLexendregular15_1" tools:text="@string/lbl_type"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearRowtotal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txtTotal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_weight="0.33" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{keranjangVM.keranjangModel.txtTotal}"
+                style="@style/txtLexendregular15" tools:text="@string/lbl_total"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_199pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.67" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{keranjangVM.keranjangModel.txtLanguageTwo}"
+                style="@style/txtLexendextrabold15" tools:text="@string/lbl_rp_120_000"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnPay"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="49sp"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_246pxh"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="13dp" android:singleLine="true"
+            android:text="Pay" android:textAllCaps="false"
+            style="@style/btnSolidRounded_3" tools:text="Pay"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtBacktomenu"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{keranjangVM.keranjangModel.txtBacktomenu}"
+            style="@style/txtLexendregular15" tools:text="Back To Menu"/>
+    </LinearLayout>
+</layout>

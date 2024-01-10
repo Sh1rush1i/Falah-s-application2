@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="outsidefiveVM" type="com.falahsapplication.app.modules.outsidefive.data.viewmodel.OutsidefiveVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearOutsideFive"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageImageFive"
+            android:layout_height="@dimen/_162pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_image5_3}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image5_3"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtRomandinner"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{outsidefiveVM.outsidefiveModel.txtRomandinner}"
+            style="@style/txtLexendregular24" tools:text="@string/lbl_roman_dinner"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:text="@{outsidefiveVM.outsidefiveModel.txtDescription}"
+            style="@style/txtLexendregular11" tools:text="@string/msg_outside_room_ad"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearTime"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnBookNow"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_9pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_9pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_book_now"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_book_now"/>
+        </LinearLayout>
+        <View
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_1_5"
+            android:id="@+id/viewRectangleSeventeen"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_3pxv"
+            android:layout_marginEnd="@dimen/_117pxh"
+            android:layout_marginStart="@dimen/_117pxh"
+            android:layout_marginTop="@dimen/_378pxv" android:layout_width="@dimen/_8pxh"/>
+    </LinearLayout>
+</layout>
